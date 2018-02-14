@@ -1,0 +1,51 @@
+To set up in Windows Visual Studio 2015
+---------------------------------------
+
+Start Visual Studio
+
+Create the project
+
+  Select File -> New -> Project from existing code
+  For "type of project", select Visual C++
+  Click Next
+  For "project file location", select the folder containing the assignment
+  For "project name", provide any name
+  Click Next
+  For "project type", select console application project ***
+  Click Next
+  Click Next
+  Click Finish
+
+  *** If the "console application project" is not visible or if the
+      above instructions don't otherwise work, you may have to install
+      the windows development packages first: Go to File -> New ->
+      Project, select Visual C++, select the option to install windows
+      development support for C++ (not the XP option), and click OK.
+      Wait.  Then start over with the instructions above.
+
+Add the libraries
+
+  Select Tools -> NuGet package manager -> Manage nuget packages for solution
+  Select Browse
+
+  In the search box, enter "nupengl"
+  Select nupengl.core
+  In the right pane, mark the checkbox beside your project name
+  Click Install
+  In the Review Changes window that pops up, click OK
+
+  Wait for nupengl.core to be installed 
+
+  In the search box, enter "glew"
+  Select glew
+  In the right pane, verify that the box beside your project name is checked
+  Click Install
+  In the Review Changes window that pops up, click OK
+
+Compile the code
+
+  Select Build -> Build Solution
+
+Run the project in Debug mode
+
+  Click the right-pointing triangle beside "Windows Local Debugger"
